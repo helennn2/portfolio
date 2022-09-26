@@ -110,7 +110,7 @@ html, body {position: relative;}
 #skills .skills_wrap .s_main ul li:nth-child(3)>p.list{background: url(../img/js-square.svg) no-repeat; padding-left: 30px;}
 #skills .skills_wrap .s_main ul li:nth-child(4)>p.list{background: url(../img/react.svg) no-repeat; padding-left: 30px;}
 #skills .skills_wrap .s_main ul li p{font-size: 22px; display: inline; position: relative; left: 10px;}
-#skills .skills_wrap .s_main ul li p.percent{position: absolute; left: 870px;}
+#skills .skills_wrap .s_main ul li p.percent{position: absolute; left: 906px;}
 #skills .skills_wrap .s_main ul li span.bar{width: 900px; height: 35px; background: #ddd; display: block; border-radius: 30px;}
 #skills .skills_wrap .s_main ul li span.bar1{width: 870px; height: 35px; border-radius: 30px; display: block; background: rgb(235, 159, 159); position: absolute; top: 393px;}
 #skills .skills_wrap .s_main ul li span.bar2{width: 870px; height: 35px; border-radius: 30px; display: block; background: rgb(236, 238, 139); position: absolute; top: 481px;}
