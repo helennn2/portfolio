@@ -1,31 +1,36 @@
-//menu
-/* $('.closeBtn').on('click',function(){
-    $('.menu-wrap').css('right','-100%');
-    $('.header-area .menu-open').css('right','0');
+//메뉴 클릭
+$('.menu-wrap').each(function(){
+  let topDiv=$(this);
+  let anchors=topDiv.find('.menu a'); 
+  let panelDivs=topDiv.find('.ct-wrap');
+  let lastAnchor=null;
+  let lastPanel=null;
+
+  lastAnchor=anchors.filter('.on') //on을 찾아서 라스트앵커에 넣고 
+  lastPanel=$(lastAnchor.attr('href'));
+  panelDivs.hide();
+  lastPanel.show();
+
+  anchors.click(function(e){
+      e.preventDefault();
+      let currentAnchor=$(this);
+      let currentPanel=$(currentAnchor.attr('href'));
+      lastAnchor.removeClass('on') 
+      currentAnchor.addClass('on') 
+
+      lastPanel.hide();
+      currentPanel.show(); 
+
+      lastAnchor=currentAnchor; 
+      lastPanel=currentPanel;
+  })
 });
-$('.openBtn').on('click',function(){
-    $('.menu-wrap').css('right','0');
-    $('.header-area .menu-open').css('right','100%');
-});
- */
 
 
-/* 스와이퍼 */
-/* var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 120,
-    loop: true,
-    centeredSlides: true,
-    loopFillGroupWithBlank: true,
-    initialSlide: 0,
-    navigation: {
-      nextEl: ".swiper-button-next",
-    },
-  });
 
- */
 
-  var swiper = new Swiper(".mySwiper", {
+//projects
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
@@ -36,43 +41,35 @@ $('.openBtn').on('click',function(){
     },
   });
 
-/* 세로스크롤 */
-window.addEventListener("wheel", function(e){
-    e.preventDefault();
-},{passive : false});
+//스킬바
+const bar = document.querySelector("#skill-bar .progress") 
+const bar2 = document.querySelector("#skill-bar .progress-bar2") 
+const bar3 = document.querySelector("#skill-bar .progress-bar3") 
+const bar4 = document.querySelector("#skill-bar .progress-bar4") 
 
-var mHtml = $("html");
-var page = 1;
+let barHtml = 90, barJs = 70, barReact = 60
+let t = 0
+bar.style.width = 0
+const barAnimation = setInterval(() => {
+  bar.style.width =  t + '%'
+  t++ >= barHtml && clearInterval(barAnimation)
+}, 10)
 
+let t2 = 0
+const barAnimation2 = setInterval(() => {
+  bar2.style.width =  t2 + '%'
+  t2++ >= barJs && clearInterval(barAnimation2)
+}, 10)
 
-mHtml.animate({scrollTop : 0},10);
+let t3 = 0
+const barAnimation3 = setInterval(() => {
+  bar3.style.width =  t3 + '%'
+  t3++ >= barJs && clearInterval(barAnimation3)
+}, 10)
 
-$(window).on("wheel", function(e) {
-    if(mHtml.is(":animated")) return;
-    if(e.originalEvent.deltaY > 0) {
-        if(page == 5) return;
-        page++;
-    } else if(e.originalEvent.deltaY < 0) {
-        if(page == 1) return;
-        page--;
-    }
-    var posTop =(page-1) * $(window).height();
-    mHtml.animate({scrollTop : posTop});
-})
+let t4 = 0
+const barAnimation4 = setInterval(() => {
+  bar4.style.width =  t4 + '%'
+  t4++ >= barReact && clearInterval(barAnimation4)
+}, 10)
 
-/* 탑버튼 */
-$(function(){
-    $(window).scroll(function(){
-        if($(this).scrollTop()>500){
-            $('#topBtn').fadeIn();
-            }else{
-            $('#topBtn').fadeOut();
-            }
-        });
-   
-    $("#topBtn").click(function(){
-        $('html,body').animate({
-            scrollTop:0
-        },400);
-    });
-});

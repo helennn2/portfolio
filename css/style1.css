@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Carneys Gallery';
     src: url('../fonts/Carneys\ Gallery.otf') format('truetype');
 }
@@ -18,69 +18,68 @@
   font-family: 'Montserrat light';
   src: url('../fonts/Montserrat-ExtraLight.ttf') format('truetype');
 }
- */
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
 
-
+/* @keyframes color {
+    0%   { background: #DDD6F3; }
+    50%  { background: #e3c3c1; }
+    80% { background: #FAACA8; }
+    100% { background: #DDD6F3; }
+} */
+  
 html{width:100%; height:100%;} 
 body {
+background-image: linear-gradient(to top, rgb(131,163,205), rgb(205,186,220) 50%, rgb(168,175,213) 100%);
+/* animation: color 9s infinite linear; */
 font-family: 'Pretendard', serif;
 width: 100%; height: 100%;
 background-attachment: fixed;
 }
 
-#header{position: relative; z-index: 1; height: 100vh; background: #F8FBEF;}
-#header h1{font-size: 100px; font-family: 'Montserrat'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; z-index: 11;}
-#header img{position: absolute; right: 300px; top: 230px; width: 350px; z-index: 10;}
+#header{position: relative; z-index: 1; height: 100vh;}
+#header .menu{position: absolute; top: 40px; right: 60px;}
+#header .menu ul li{margin-bottom: 10px;}
+#header .menu ul li a{font-size: 24px; font-style: italic; color: #fff;}
+#header .menu ul li:hover a{color: rgb(56, 55, 55);}
+#header #home h1{font-size: 118px; font-family: 'Montserrat';}
+#header #home .intro .intro_l{position: absolute; top: 240px; left: 400px; color: #fff;}
+#header #home .intro .intro_r{position: absolute; top: 380px; right: 470px; color: transparent; -webkit-text-stroke: 2px #fff;}
 
-#content{position: relative; height: 100vh;}
-#content .menu-wrap{position: absolute; right: 120px; top: 50px;}
-#content .menu-wrap ul{display: flex;}
-#content .menu-wrap ul li{margin-right: 30px;}
-#content .menu-wrap ul li a{font-size: 24px;font-family: 'Montserrat', sans-serif; color: #4C4C4D;}
-#content .menu-wrap ul li a.on{background: linear-gradient(to top, #fad4ae 50%, transparent 50%);}
-#content .content-wrap{width: 85%; height: 650px; background: #f6eee5; border-radius: 30px; position: relative; top: 102px; left: 50%; transform: translateX(-50%);}
-#content .content-wrap #about-wrap{display: flex;}
-#content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 130px;}
-#content .content-wrap #about-wrap .desc_l h1{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat', sans-serif; position: absolute; top: -90px; left: 45px; font-weight: 900;}
-#content .content-wrap #about-wrap .desc_l img{border-radius: 50%; width: 23%; position: absolute; top: -10px; left: 40px;}
-#content .content-wrap #about-wrap .desc_l>p{font-size: 24px; text-align: center; line-height: 200%; position: relative; top: 230px; left: 0px;}
-#content .content-wrap #about-wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 200px; top: -14px; width: 345px; font-size: 22px;}
-#content .content-wrap #about-wrap .desc_l .about_me p{display: inline; color: #66764A; font-weight: 500; padding-right: 35px;} 
-#content .content-wrap #about-wrap .desc_l .about_me p.name{padding-right: 51px;}
-#content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 70px;}
-#content .content-wrap #about-wrap .desc_l .about_me p.contact{padding-right: 30px;}
-#content .content-wrap #about-wrap .desc_l .about_me p.email{padding-right: 50px;}
-#content .content-wrap #about-wrap .skills{width: 50%; padding: 63px;}
-#content .content-wrap #about-wrap .skills>p{font-size: 26px; font-weight: bold; border-bottom: 2px solid #333; width: 140px;}
-#content .content-wrap #about-wrap .skills .skill-wrap>div{position: relative; margin-top: 28px;}
-#content .content-wrap #about-wrap .skills .skill-wrap div>p{display: inline; font-size: 16px;}
-#content .content-wrap #about-wrap .skills .skill-wrap div .percent{position: absolute; right: 0;}
-#content .content-wrap #about-wrap .skills .skill-etc{margin-top: 40px;}
-#content .content-wrap #about-wrap .skills .skill-etc p{display: inline-block; font-size: 14px; margin-right: 5px;border: 1px solid #333; padding: 5px 10px;}
-#content .bImg2 img{position: absolute;}
-#content .bImg2 .b102{top:20px; left: 30px;}
-#content .bImg2 .b202{top:20px; right: 30px;}
-#content .bImg2 .b302{top:20px; right: 700px;}
-#content .bImg2 .b402{bottom: 36px; right: 75px;}
-#content .bImg2 .b502{left: 30px;}
+#about{position: relative; height: 100vh;}
+#about h1{font-size: 100px; color: #fff; font-family: 'Carneys Gallery'; letter-spacing: -5.8px; padding-left: 30px;}
+#about .about_wrap{width: 95%; height: 650px; background: rgba(255,255,255,.6); border-radius: 20px; margin-left: 30px; position: relative; top: -15px; display: flex;}
+#about .about_wrap .desc_l{width: 50%; position: relative; top: 100px;}
+#about .about_wrap .desc_l img{border-radius: 50%; width: 23%; position: absolute; top: -35px; left: 40px;}
+#about .about_wrap .desc_l>p{font-size: 24px; text-align: center; line-height: 200%; position: relative; top: 230px; left: 0px;}
+#about .about_wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 250px; top: -39px; width: 345px; font-size: 22px;}
+#about .about_wrap .desc_l .about_me p{display: inline; color: #755FD7; font-weight: 500; padding-right: 35px;} 
+#about .about_wrap .desc_l .about_me p.name{padding-right: 51px;}
+#about .about_wrap .desc_l .about_me p.age{padding-right: 75px;}
+#about .about_wrap .desc_l .about_me p.contact{padding-right: 30px;}
+#about .about_wrap .desc_l .about_me p.email{padding-right: 50px;}
+#about .about_wrap .skills{width: 50%; padding: 63px;}
+#about .about_wrap .skills>p{font-size: 26px; font-weight: bold; border-bottom: 2px solid #333; width: 140px;}
+#about .about_wrap .skills .skill-wrap>div{position: relative; margin-top: 28px;}
+#about .about_wrap .skills .skill-wrap div>p{display: inline; font-size: 16px;}
+#about .about_wrap .skills .skill-wrap div .percent{position: absolute; right: 0;}
+#about .about_wrap .skills .skill-etc{margin-top: 40px;}
+#about .about_wrap .skills .skill-etc p{display: inline-block; font-size: 18px; margin-right: 5px;border: 1px solid #333; padding: 5px 10px;}
 
 #skill-bar{margin-top: 10px;}
 .progress-bar, .progress-bar2, .progress-bar3, .progress-bar4 {width: 100%; height: 30px; background-color: #dedede; font-weight: 600; font-size: .8rem; margin-bottom: 1rem; border-radius: 20px;}
 .progress-bar>div{width: 0; height: 30px; padding: 0; text-align: center;color: #111; border-radius: 20px;}
-.progress-bar .progress { background-color: #66764A;}
-.progress-bar .progress-bar2 {background-color: #D5C4A3;}
-.progress-bar .progress-bar3 {background-color: #e0ac73;}
-.progress-bar .progress-bar4 {background-color: #95A474;}
+.progress-bar .progress { background-color: #c332f8;}
+.progress-bar .progress-bar2 {background-color: #dfbfea;}
+.progress-bar .progress-bar3 {background-color: #9455af;}
+.progress-bar .progress-bar4 {background-color: #ae73c8;}
 
 
 #projects{height: 100vh; position: relative;}
 #projects .projects_wrap .projects_header{display: flex; justify-content: space-between;}
-#projects .projects_wrap .projects_header h2{font-size: 100px; color: #333; position: relative; top: 0px; letter-spacing: -5.8px; padding-left: 30px;}
+#projects .projects_wrap .projects_header h2{font-size: 100px; color: #fff; font-family: 'Carneys Gallery'; position: relative; top: 0px; letter-spacing: -5.8px; padding-left: 30px;}
 #projects .projects_wrap .projects_header .menu{position: absolute; top:70px; right: 100px; z-index: 999;}
 #projects .projects_wrap .projects_header .menu ul{display: flex; height: 0;}
 #projects .projects_wrap .projects_header .menu ul li{margin-left: 60px;}
-#projects .projects_wrap .projects_header .menu ul li a{font-size: 22px; color: #333; font-weight: 600; letter-spacing: 3px;}
+#projects .projects_wrap .projects_header .menu ul li a{font-size: 22px; color: #fff; font-family: 'Montserrat light'; font-weight: 600; letter-spacing: 3px;}
 #projects .projects_wrap .projects_header .menu ul li:hover a{color: rgb(0,0,0,.5);}
 #projects .projects_wrap .p_main .p_btn a.prev{position: absolute; top: 85%; left: 30px;}
 #projects .projects_wrap .p_main .p_btn a.next{position: absolute; top: 85%; right: 30px;}
@@ -101,7 +100,7 @@ background-attachment: fixed;
     text-align: center;
     font-size: 18px;
     position: relative;
-    color: #333;
+    color: #fff;
   
     /* Center slide text vertically */
     display: -webkit-box;
@@ -171,7 +170,7 @@ background-attachment: fixed;
     display: block;
     text-align: center;
     line-height: 246px;
-    color: #333;
+    color: #fff;
   }
 /*   .swiper-slide .content01{
     position: absolute;
@@ -188,7 +187,7 @@ background-attachment: fixed;
     display: block;
     text-align: center;
     line-height: 246px;
-    color: #333;
+    color: #fff;
   } */
   .swiper-button-next{
     top: 609px;
@@ -198,4 +197,5 @@ background-attachment: fixed;
     margin-left:-110px
   }
   
-
+  #contact{position: relative; height: 100vh;}
+  #contact .c-wrap{width: 95%; height: 650px; background: rgba(255,255,255,.6); border-radius: 20px; margin-left: 30px; position: relative; top: 100px;}

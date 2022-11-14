@@ -3,7 +3,7 @@
 <head>
 	<title>박혜리 포트폴리오</title>
 	<meta charset='utf-8'>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
 	<meta name='Title' content='박혜리 포트폴리오'>
 	<meta name='Subject' content='박혜리 포트폴리오'>
 	<meta name='Keywords' content='박혜리 포트폴리오'>
@@ -14,237 +14,137 @@
 	<meta name='Robots' content='index,follow'>
 
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
 
-	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-	<link rel="icon" href="./img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+	<link rel="icon" href="./img/favicon.svg" type="image/x-icon">
 
-
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="./js/jquery-1.12.4.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-	<script src='js/jquery-2.2.4.min.js'></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src='js/script.js' defer></script>
 </head>
 <body>
 	<ul id="skip">
 		<li><a href="#header">헤더 바로가기</a></li>
-		<li><a href="#nav">메뉴 바로가기</a></li>
-		<li><a href="#content">내용 바로가기</a></li>
+		<li><a href=".menu">메뉴 바로가기</a></li>
+		<li><a href=".content">내용 바로가기</a></li>
 	</ul>
 	<div id="wrap">
-		<div class="menu-wrap">
-			<div>
-				<div class="mobile-menu-bar">
-					<div class="mobile-appBtn-wrap">
-						<a href="javascript:" class="closeBtn">
-							<i class="appbar-line appbar-line1"></i>
-							<i class="appbar-line appbar-line2"></i>
-						</a>
-					</div>
-				</div>
-				<div class="mobile-menu-list">
-					<ul>
-						<li><a href="#header">HOME</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#skills">SKILLS</a></li>
-						<li><a href="#projects">PROJECTS</a></li>
-						<li><a href="#footer">CONTACT</a></li>
-					</ul>
-				</div>
-				<div class="mobile-menu-footer">
-					<a href="#" title="git"><img src="./img/git.svg" alt="git"></a>
-					<a href="#" title="notion"><img src="./img/notion.png" alt="notion"></a>
-				</div>
+		<header id="header" class="header-area">
+			<div class="intro">
+				<h1>PARK HYE RI<br/>
+				FRONTEND</h1>
 			</div>
-		</div>
-		<header id="header" class="header-area section">
-			<div id="home" class="home">
-				<div class="menu">
-					<ul>
-						<li><a href="#header" title="Home">Home</a></li>
-						<li><a href="#about" title="About">About</a></li>
-						<li><a href="#skills" title="Skills">Skills</a></li>
-						<li><a href="#projects" title="Projects">Projects</a></li>
-						<li><a href="#footer" title="Contact">Contact</a></li>
-					</ul>
-				</div>
-				<div class="intro">
-					<img src="./img/main_top.png" alt="main_top"  class="main_top">
-					<img src="./img/main_bottom.png" alt="main_bottom"  class="main_bottom">
-					<h1 class="intro_l">PARK HYE RI</h1>
-					<h1 class="intro_r">FRONTEND.</h1>
-				</div>
-                <a href="#about"><img src="./img/Arrow02.png" alt="화살표"></a>
-			</div>
+			<img src="./img/Vector.png" alt="Vector">
+			<!-- <div class="bImg">
+				<img src="./img/b1.png" alt="b1" class="b1">
+				<img src="./img/b2.png" alt="b2" class="b2">
+				<img src="./img/b3.png" alt="b3" class="b3">
+				<img src="./img/b5.png" alt="b5" class="b5">
+			</div> -->
 		</header> 
 		<main>
-			<section id="about" class="about section">
-				<div class="about_wrap">
-					<div class="about_header">
-						<h2>ABOUT</h2>
-						<!-- <div class="menu-open"><a href="javascript:" title="menu" class="openBtn"><img src="./img/menubar.png" alt="menubar"></a></div> -->
-						<div class="menu">
-							<ul>
-								<li><a href="#header" title="Home">Home</a></li>
-								<li><a href="#about" title="About">About</a></li>
-								<li><a href="#skills" title="Skills">Skills</a></li>
-								<li><a href="#projects" title="Projects">Projects</a></li>
-								<li><a href="#footer" title="Contact">Contact</a></li>
-							</ul>
+			<section id="content" class="content">
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#projects">PROJECTS</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="content-wrap">
+					<div id="about-wrap" class="ct-wrap">
+						<div class="desc_l">
+							<h1>About me</h1>
+							<img src="./img/me.JPG" alt="이미지">
+							<div class="about_me">
+								<p class="name">Name.</p><span>박혜리</span><br>
+								<p class="age">Age.</p><span>25세</span><br>
+								<p class="contact">Contact.</p><span>010.3350.7103</span><br>
+								<p class="email">E-mail.</p><span>parkri1240@gmail.com</span>
+							</div>
+							<p>성장하는 개발자 박혜리입니다. <br />
+								늘 혁신과 변화를 꿈꾸는 개발자가 되겠습니다. <br/>
+								성장하는 개발자 박혜리입니다. <br />
+								늘 혁신과 변화를 꿈꾸는 개발자가 되겠습니다. 
+							</p>
+						</div>
+						<div class="skills">
+							<p>Skills</p>
+							<div class="skill-wrap">
+								<div class="html">
+									<p class="sub">HTML/CSS</p>
+									<p class="percent">90%</p>
+									<div id="skill-bar" class="progress-bar">
+										<div class="progress"> </div>
+									</div>
+								</div>
+								<div class="js">
+									<p class="sub">Javascript</p>
+									<p class="percent">70%</p>
+									<div id="skill-bar" class="progress-bar">
+										<div class="progress-bar2"></div>
+									</div>
+									
+								</div>
+								<div class="jquery">
+									<p class="sub">jQuery</p>
+									<p class="percent">70%</p>
+									<div id="skill-bar" class="progress-bar">
+										<div class="progress-bar3"></div>
+									</div>
+								</div>
+								<div class="react">
+									<p class="sub">React</p>
+									<p class="percent">60%</p>
+									<div id="skill-bar" class="progress-bar">
+										<div class="progress-bar4"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skill-etc">
+								<p>Bootstrap</p>
+								<p class="etcP">Scss</p>
+								<p class="etcP">Git</p>
+								<p>Photoshop</p>
+								<p>Illustrator</p>
+								<p>Figma</p>
+								<p>Zeplin</p>
+							</div>
 						</div>
 					</div>
-					<div class="desc">
-						<img src="./img/image.png" alt="이미지">
-						<p class="p_name">이름 : 박혜리</p>
-						<p class="p_desc">안녕하세요 <br>
-							성장하는 개발자 박혜리입니다. <br> 
-							늘 혁신과 변화를 꿈꾸는  개발자가 되겠습니다. <br>
-						</p>
-					</div>
-					<div class="desc_r">
-						<div class="about_me">
-							<strong>ABOUT ME</strong>
-							<p class="name">Name.</p><span>박혜리</span><br>
-							<p class="age">Age.</p><span>25세</span><br>
-							<p class="contact">Contact.</p><span>010.3350.7103</span><br>
-							<p class="email">E-mail.</p><span>parkri1240@gmail.com</span>
-						</div>
-						<div class="certification">
-							<strong>CERTIFICATION</strong>
-							<p>2022.09.02.</p><span>GTQi 1급</span><br>
-							<p>2022.09.02.</p><span>GTQ 1급</span><br>
-							<p>2022.09.02.</p><span>컴퓨터활용능력 2급</span>
-						</div>
-						<div class="link">
-							<a href="https://github.com/ririhh" title="깃 바로가기" class="git" target="_blank">Git 바로가기</a>
-							<a href="http://hyeri0421.dothome.co.kr/daily/index.html" title="깃 바로가기" class="daily" target="_blank">일기장 바로가기</a>
-						</div>
+					<div id="projects-wrap" class="ct-wrap">
+						
 					</div>
 				</div>
-			</section>
-			<section id="skills" class="skills section">
-				<div class="skills_wrap">
-					<div class="skills_header">
-						<h2>SKILLS</h2>
-						<div class="menu">
-							<ul>
-								<li><a href="#header" title="Home">Home</a></li>
-								<li><a href="#about" title="About">About</a></li>
-								<li><a href="#skills" title="Skills">Skills</a></li>
-								<li><a href="#projects" title="Projects">Projects</a></li>
-								<li><a href="#footer" title="Contact">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="s_main">
-						<ul>
-							<li>
-								<p class="list">HTML</p>
-								<p class="percent">95%</p>
-								<span class="bar"></span>
-								<span class="bar1"></span>
-							</li>
-							<li>
-								<p class="list">CSS</p>
-								<p class="percent">95%</p>
-								<span class="bar"></span>
-								<span class="bar2"></span>
-							</li>
-							<li>
-								<p class="list">Javascript</p>
-								<p class="percent">75%</p>
-								<span class="bar"></span>
-								<span class="bar3"></span>
-							</li>
-							<li>
-								<p class="list">REACT</p>
-								<p class="percent">70%</p>
-								<span class="bar"></span>
-								<span class="bar4"></span>
-							</li>
-						</ul>
-					</div>
-					<span></span>
-					<div class="s_right">
-						<p class="jquery">Jquery</p>
-						<p class="bootstrap">Bootstrap</p>
-						<p class="scss">Scss</p>
-						<p class="git">Git</p><br>
-						<p class="photoshop">Photoshop</p>
-						<p class="illustrator">Illustrator</p>
-						<p class="figma">Figma</p>
-						<p class="zeplin">Zeplin</p>
-					</div>
+				<div class="bImg2">
+					<img src="./img/b1.png" alt="b1" class="b102">
+					<img src="./img/b2.png" alt="b2" class="b202">
+					<img src="./img/b3.png" alt="b3" class="b302">
+					<img src="./img/b4.png" alt="b4" class="b402">
+					<img src="./img/b5.png" alt="b5" class="b502">
 				</div>
 			</section>
-			<section id="projects" class="projects section">
+			<!-- <section id="projects" class="projects section">
 				<div class="projects_wrap">
 					<div class="projects_header">
 						<h2>PROJECTS</h2>
-						<div class="menu">
-							<ul>
-								<li><a href="#header" title="Home">Home</a></li>
-								<li><a href="#about" title="About">About</a></li>
-								<li><a href="#skills" title="Skills">Skills</a></li>
-								<li><a href="#projects" title="Projects">Projects</a></li>
-								<li><a href="#footer" title="Contact">Contact</a></li>
-							</ul>
-						</div>
 					</div>
-					<!-- <div class="swiper mySwiper">
-						<div class="swiper-wrapper">
-						  <div class="swiper-slide s1">
-							<img src="./img/mois.png" alt="mois">
-							<div class="overlay">
-								<div class="content">
-									<a href="../00_Mois/indexMois.html" target="_blank">바로가기</a>
-								</div>
-							</div>
-							<h3>1. 행정안전부 <br>
-								HTML, CSS, JQUERY
-							</h3>
-							<p>08.xx ~ 08.xx (x개월)</p>
-						</div>
-						  <div class="swiper-slide s2">
-							<img src="./img/lotte.png" alt="lotte">
-							<div class="overlay">
-								<div class="content">
-									<a href="../01_Lotte/index.html" target="_blank">바로가기</a>
-								</div>
-							</div>
-							<h3>2. 롯데백화점 (반응형) <br>
-								HTML, CSS, JQUERY
-							</h3>
-							<p>08.xx ~ 08.xx (x개월)</p>
-						  </div>
-						  <div class="swiper-slide s3">
-							<img src="./img/29cm.png" alt="29cm">
-							<div class="overlay01">
-								<div class="content">
-									<a href="../05_mobile/index.html" target="_blank">바로가기</a>
-								</div>
-							</div>
-							<h3>3. 29cm (모바일 앱) <br>
-								HTML, CSS, JAVASCRIPT
-							</h3>
-							<p>08.xx ~ 08.xx (x개월)</p>
-						  </div>
-					</div> -->
-					
 					<div class="swiper mySwiper">
 						<div class="swiper-wrapper">
 						  <div class="swiper-slide">
 							<img src="./img/p_01.png" alt="행정안전부">
 							<div class="content">
-								<a href="http://hyeri0421.dothome.co.kr/00_Mois/indexMois.html" target="_blank">바로가기</a>
+								<a href="../00_Mois/indexMois.html" target="_blank">바로가기</a>
 							</div>
-							<h2>01</h2>
-							<h3>행정안전부</h3>
+							<h3>01. 행정안전부</h3>
 							<p>- 소요기간: 08.xx~08.xx(약 x개월)<br>
 								- 클론코딩<br>
 								- HTML, CSS, Javascript<br>
-								- api
+								- api(뉴스, 날씨, 지도)
 							</p>
 						  </div>
 						  <div class="swiper-slide">
@@ -252,54 +152,62 @@
 							<div class="content">
 								<a href="https://ririhh.github.io/lotte/" target="_blank">바로가기</a>
 							</div>
-							<h2>02</h2>
-							<h3>롯데백화점 (반응형)</h3>
+							<h3>02. 롯데백화점 (반응형)</h3>
 							<p>- 소요기간: 08.xx~08.xx(약 x개월)<br>
 								- 클론코딩<br>
 								- HTML, CSS, jQuery<br>
 							</p>
 						  </div>
 						  <div class="swiper-slide">
-							<img src="./img/p_03.png" alt="29cm" class="cmImg">
-							<div class="content01">
-								<a href="http://hyeri0421.dothome.co.kr/05_mobile/index.html" target="_blank">바로가기</a>
-							</div>
-							<h2>03</h2>
-							<h3>29CM (모바일 앱)</h3>
-							<p>- 소요기간: 08.xx~08.xx(약 x개월)<br>
-								- HTML, CSS, jQuery<br>
-							</p>
-						  </div>
-						  <div class="swiper-slide">
-							<!-- <img src="./img/p_03.png" alt="29cm" class="cmImg">
+							<img src="./img/p_03.png" alt="29cm">
 							<div class="content">
-								<a href="../05_mobile/index.html" target="_blank">바로가기</a>
-							</div> -->
-							<h2>04</h2>
-							<!-- <h3>29CM (모바일 앱)</h3>
+								<a href="https://ririhh.github.io/mobile/" target="_blank">바로가기</a>
+							</div>
+							<h3>03. 29CM (모바일 앱)</h3>
+							<p>- 소요기간: 08.xx~08.xx(약 x개월)<br>
+								- HTML, SCSS, ,Javascript, jQuery<br>
+								- Swiper<br>
+							</p>
+						  </div>
+						  <div class="swiper-slide">
+							<img src="./img/p_04.png" alt="그림판">
+							<div class="content">
+								<a href="https://ririhh.github.io/meme-maker/" target="_blank">바로가기</a>
+							</div>
+							<h3>04. 그림판</h3>
+							<p>- 소요기간: 08.xx~08.xx(약 x개월)<br>
+								- 노마드 코더 클론코딩<br>
+								- HTML, CSS, Javascript<br>
+							</p>
+						  </div>
+						  <div class="swiper-slide">
+							<img src="./img/p_05.png" alt="투두">
+							<div class="content">
+								<a href="https://ririhh.github.io/momentum_js/" target="_blank">바로가기</a>
+							</div>
+							<h3>05. 크롭 앱</h3>
+							<p>- 소요기간: 08.xx~08.xx(약 x개월)<br>
+								- 노마드 코더 클론코딩<br>
+								- HTML, CSS, Javascript<br>
+							</p>
+						  </div>
+						  <div class="swiper-slide">
+							<img src="./img/p_06.png" alt="kurly">
+							<div class="content">
+								<a href="https://ririhh.github.io/kurly/" target="_blank">바로가기</a>
+							</div>
+							<h3>06. 마켓컬리 회원가입 폼</h3>
 							<p>- 소요기간: 08.xx~08.xx(약 x개월)<br>
 								- 클론코딩<br>
-								- HTML, CSS, jQuery<br>
-							</p> -->
+								- HTML, SCSS, React<br>
+							</p>
 						  </div>
 						</div>
 						<div class="swiper-button-next"><img src="./img/next_btn.png" alt="next"></div>
 					  </div>
 				</div>
-			</section>
+			</section> -->
 		</main>
-		<footer id="footer" class="footer section">
-			<div class="footer_header">
-			</div>
-			<div class="ul_wrap">
-				<strong>Tel.</strong><span>010.3350.7103</span>
-				<strong>Git.</strong><span><a href="https://github.com/ririhh" target="_blank" class="git_a">https://github.com/ririhh</a></span>
-				<strong>E.</strong><span class="email">parkri1240@gmail.com</span><br>
-				<strong class="etc">ETC.</strong>
-				<a href="http://hyeri0421.dothome.co.kr/daily/index.html" class="etc_d" target="_blank">일기장 바로가기</a>
-			</div>
-		</footer>
-		<a href="#" id="topBtn">Top</a>
 	</div>
 </div>
 
