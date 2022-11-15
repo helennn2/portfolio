@@ -1,3 +1,8 @@
+//click
+$( document ).ready( function() {
+  $( '.click' ).fadeIn( 5000 );
+} );
+
 //메뉴 클릭
 $('.menu-wrap').each(function(){
   let topDiv=$(this);
