@@ -3,6 +3,24 @@ $( document ).ready( function() {
   $( '.click' ).fadeIn( 5000 );
 } );
 
+//click -> 스크롤 이동
+$(document).ready(function(){
+  $("#header>a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      let hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+
+//화면전환시 애니메이션 실행
+
+
 //메뉴 클릭
 $('.menu-wrap').each(function(){
   let topDiv=$(this);
