@@ -95,4 +95,3 @@ const barAnimation4 = setInterval(() => {
   bar4.style.width =  t4 + '%'
   t4++ >= barReact && clearInterval(barAnimation4)
 }, 10)
-
