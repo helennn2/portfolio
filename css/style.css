@@ -21,13 +21,17 @@
 }
 
 
-html{width:100%; height:100%;} 
+html{width:100%; height:100%; overflow: hidden;} 
 body {/* font-family: 'Pretendard', serif; */ width: 100%; height: 100%; background-attachment: fixed;}
-#wrap{}
+
+.content{
+	width: 100%; height: 100%;
+	position: relative;
+}
 
 #header{position: relative; z-index: 1; width: 100%; height: 100vh; background: #F8FBEF;}
 #header .vector{position: absolute; right: 300px; top: 230px; width: 350px; z-index: 10;}
-#header .click{width: 100px; height: 68px; position: absolute; bottom: 38px; left: 50%; transform: translateX(-50%); cursor: pointer; background: url(../img/click.png) no-repeat; background-size: cover; /* transition: .2s;  */
+#header .click{width: 100px; height: 68px; position: absolute; bottom: 38px; left: 50%; transform: translateX(-50%); cursor: pointer; background: url(../img/click.png) no-repeat; background-size: cover; 
   animation: motion 0.5s linear 0s infinite alternate;
   -moz-animation: motion 0.5s linear 0s infinite alternate;
   -webkit-animation: motion 0.5s linear 0s infinite alternate;
@@ -78,15 +82,15 @@ body {/* font-family: 'Pretendard', serif; */ width: 100%; height: 100%; backgro
 #content .content-wrap #about-wrap{display: flex;}
 #content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 130px;}
 #content .content-wrap #about-wrap .desc_l h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: -90px; left: 45px; font-weight: 900;}
-#content .content-wrap #about-wrap .desc_l img{border-radius: 50%; width: 23%; position: absolute; top: 5px; left: 40px;}
-#content .content-wrap #about-wrap .desc_l>p{font-size: 23px; text-align: center; line-height: 200%; position: relative; top: 230px; left: 0px; line-height: 210%;}
-#content .content-wrap #about-wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 200px; top: -14px; width: 345px; font-size: 22px;}
+#content .content-wrap #about-wrap .desc_l img{border-radius: 50%; width: 23%; position: absolute; top: 25px; left: 40px;}
+#content .content-wrap #about-wrap .desc_l>p{font-size: 23px; text-align: center; line-height: 200%; position: relative; top: 250px; left: 0px; line-height: 210%;}
+#content .content-wrap #about-wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 200px; top: 14px; width: 345px; font-size: 22px;}
 #content .content-wrap #about-wrap .desc_l .about_me p{display: inline; color: #66764A; font-weight: 500; padding-right: 35px;} 
 #content .content-wrap #about-wrap .desc_l .about_me p.name{padding-right: 51px;}
 #content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 70px;}
 #content .content-wrap #about-wrap .desc_l .about_me p.contact{padding-right: 34px;}
 #content .content-wrap #about-wrap .desc_l .about_me p.email{padding-right: 48px;}
-#content .content-wrap #about-wrap .skills{width: 50%; padding: 63px;}
+#content .content-wrap #about-wrap .skills{width: 50%; padding: 104px 63px 0 63px;}
 #content .content-wrap #about-wrap .skills>p{font-size: 26px; font-weight: bold; border-bottom: 2px solid #333; width: 140px;}
 #content .content-wrap #about-wrap .skills .skill-wrap>div{position: relative; margin-top: 28px;}
 #content .content-wrap #about-wrap .skills .skill-wrap div>p{display: inline; font-size: 16px;}
