@@ -82,7 +82,7 @@ body {/* font-family: 'Pretendard', serif; */ width: 100%; height: 100%; backgro
 #content .content-wrap #about-wrap{display: flex;}
 #content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 130px;}
 #content .content-wrap #about-wrap .desc_l h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: -90px; left: 45px; font-weight: 900;}
-#content .content-wrap #about-wrap .desc_l img{border-radius: 50%; width: 23%; position: absolute; top: 25px; left: 40px;}
+#content .content-wrap #about-wrap .desc_l img{border-radius: 50%; width: 130px; position: absolute; top: 25px; left: 40px;}
 #content .content-wrap #about-wrap .desc_l>p{font-size: 23px; text-align: center; line-height: 200%; position: relative; top: 250px; left: 0px; line-height: 210%;}
 #content .content-wrap #about-wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 200px; top: 14px; width: 345px; font-size: 22px;}
 #content .content-wrap #about-wrap .desc_l .about_me p{display: inline; color: #66764A; font-weight: 500; padding-right: 35px;} 
@@ -106,7 +106,7 @@ body {/* font-family: 'Pretendard', serif; */ width: 100%; height: 100%; backgro
 
 #skill-bar{margin-top: 10px;}
 .progress-bar, .progress-bar2, .progress-bar3, .progress-bar4 {width: 100%; height: 30px; background-color: #dedede; font-weight: 600; font-size: .8rem; margin-bottom: 1rem; border-radius: 20px;}
-.progress-bar>div{width: 0; height: 30px; padding: 0; text-align: center;color: #111; border-radius: 20px;}
+.progress-bar>div{width: 0; height: 30px; padding: 0; text-align: center; color: #111; border-radius: 20px;}
 .progress-bar .progress { background-color: #66764A;}
 .progress-bar .progress-bar2 {background-color: #D5C4A3;}
 .progress-bar .progress-bar3 {background-color: #e0ac73;}
@@ -125,14 +125,11 @@ body {/* font-family: 'Pretendard', serif; */ width: 100%; height: 100%; backgro
 
 #content .content-wrap .arrow{position: absolute; top: 90%; left: 50%; transform: translateX(-50%); z-index: 9999;}
 
-
-
 .swiper {
   position: absolute;
-  /* background: yellowgreen; */
   top: 13%;
-  left: 40px;
-  width: 92%;
+  left: 10px;
+  width: 100%;
   height: 77%;
 }
 
@@ -224,15 +221,32 @@ body {/* font-family: 'Pretendard', serif; */ width: 100%; height: 100%; backgro
 
 #content .content-wrap #contact-wrap{display: none;}
 #content .content-wrap #contact-wrap .contact-header h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; font-weight: 900;}
-#content .content-wrap #contact-wrap .contact-header .contact{position: absolute; top: 40px; left: 45px;}
+#content .content-wrap #contact-wrap .contact-header .contact{position: relative; top: 40px; left: 45px;}
 #content .content-wrap #contact-wrap .contact-header .thankyou{position: absolute; bottom: 40px; right: 45px;}
-#content .content-wrap #contact-wrap .myInfo{line-height: 550%; border-top: 2px solid #4C4C4D; border-bottom: 2px solid #4C4C4D; position: relative; top: 220px; height: 250px;}
+#content .content-wrap #contact-wrap .myInfo{line-height: 550%; position: relative; top: 140px; height: 250px;}
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap{width: 250px; margin: 18px auto;}
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap p{font-size: 20px; position: relative; }
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap p img{width: 40px; position: relative; top: 13px; left: -8px;}
-#content .content-wrap .link{}
 #content .content-wrap .link ul{position: absolute; bottom: 10px; right:-40px;}
-#content .content-wrap .link ul li{}
-#content .content-wrap .link ul li a{}
-#content .content-wrap .link ul li a img{width: 30px;}
+#content .content-wrap .link ul li a img{width: 30px; transition: .4s;}
+#content .content-wrap .link ul li:hover a img{scale: 1.2;}
 #content .content-wrap .link ul li a .book{margin-top: 3px;}
+
+@media screen and (max-width: 1330px ){
+  #content .content-wrap #about-wrap .skills .skill-etc p{margin-bottom: 10px;}
+  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 18px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 66px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p.contact{padding-right: 37px;}
+  #content .content-wrap #about-wrap .desc_l>p{font-size: 20px; top: 284px; left: 25px;}
+  #content .bImg2 .b402{left: 60px;}
+}
+@media screen and (max-width: 1123px ){
+  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 16px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 63px;}
+}
+@media screen and (max-width: 1055px ){
+  #content .content-wrap #about-wrap .desc_l .about_me p.name{padding-right: 20px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 34px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p.contact{padding-right: 8px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p.email{padding-right: 19px;}
+}

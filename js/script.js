@@ -54,7 +54,7 @@ $('.menu-wrap').each(function(){
   let lastAnchor=null;
   let lastPanel=null;
 
-  lastAnchor=anchors.filter('.on') //on을 찾아서 라스트앵커에 넣고 
+  lastAnchor=anchors.filter('.on')
   lastPanel=$(lastAnchor.attr('href'));
   panelDivs.hide();
   lastPanel.show();
@@ -73,7 +73,6 @@ $('.menu-wrap').each(function(){
       lastPanel=currentPanel;
   })
 });
-
 
 
 
