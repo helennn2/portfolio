@@ -25,7 +25,7 @@ html{width:100%; height:100%; overflow: hidden;}
 body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
 
 #header{position: relative; z-index: 1; width: 100%; height: 100vh; background: #F8FBEF;}
-#header .vector{position: absolute; right: 24%; top: 230px; width: 350px; z-index: 10;}
+#header .vector{position: absolute; right: 24%; top: 50%; transform: translateY(-50%); width: 350px; z-index: 10;}
 #header .click{width: 100px; height: 68px; position: absolute; bottom: 38px; left: 50%; transform: translateX(-50%); cursor: pointer; background: url(../img/click.png) no-repeat; background-size: cover; 
   animation: motion 0.5s linear 0s infinite alternate;
   -moz-animation: motion 0.5s linear 0s infinite alternate;
@@ -41,7 +41,7 @@ body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
 }
 
 
-#header .heading{position: relative; top: 31%; z-index: 11;}
+#header .heading{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; z-index: 11;}
 #header .heading>div{overflow: hidden;}
 #header .heading>div{-webkit-animation-delay: 0; animation-delay: 0;}
 #header .heading>div:nth-child(2)>p{-webkit-animation-delay: 0.05s; animation-delay: 0.05s;}
@@ -81,22 +81,18 @@ body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
   -webkit-animation: fadein 3s; 
   -o-animation: fadein 3s;}
 #content .content-wrap #about-wrap h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: 38px; left: 47px;}
-#content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 150px; left: 5%;}
+#content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 120px; left: 5%;}
 #content .content-wrap #about-wrap .desc_l img{border-radius: 50%; width: 130px; position: absolute; top: 25px; left: 40px;}
 #content .content-wrap #about-wrap .desc_l>p{font-size: 23px; text-align: center; position: relative; top: 270px; left: -11%; line-height: 220%;}
-#content .content-wrap #about-wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 250px; top: 14px; width: 345px; font-size: 22px;}
-#content .content-wrap #about-wrap .desc_l .about_me p{display: inline; color: #66764A; font-weight: 500; padding-right: 35px;} 
-#content .content-wrap #about-wrap .desc_l .about_me p.name{padding-right: 51px;}
-#content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 75px;}
-#content .content-wrap #about-wrap .desc_l .about_me p.contact{padding-right: 34px;}
-#content .content-wrap #about-wrap .desc_l .about_me p.email{padding-right: 48px; white-space: nowrap;}
-#content .content-wrap #about-wrap .skills{width: 50%; padding: 135px 63px 0 63px;}
+#content .content-wrap #about-wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 250px; top: 14px; width: 360px; font-size: 22px;}
+#content .content-wrap #about-wrap .desc_l .about_me p{display: block; color: #66764A; font-weight: 500; width: 120px; float: left;} 
+#content .content-wrap #about-wrap .skills{width: 50%; padding: 103px 63px 0 63px;}
 #content .content-wrap #about-wrap .skills>p{font-size: 26px; font-weight: bold; border-bottom: 2px solid #333; width: 140px;}
 #content .content-wrap #about-wrap .skills .skill-wrap>div{position: relative; margin-top: 28px;}
 #content .content-wrap #about-wrap .skills .skill-wrap div>p{display: inline; font-size: 16px;}
 #content .content-wrap #about-wrap .skills .skill-wrap div .percent{position: absolute; right: 0;}
 #content .content-wrap #about-wrap .skills .skill-etc{margin-top: 40px;}
-#content .content-wrap #about-wrap .skills .skill-etc p{display: inline-block; font-size: 14px; margin-right: 5px;border: 1px solid #333; padding: 5px 10px;}
+#content .content-wrap #about-wrap .skills .skill-etc p{display: inline-block; font-size: 14px; margin-right: 5px;border: 1px solid #333; padding: 5px 10px; margin-bottom: 10px;}
 #content .bImg2 img{position: absolute;}
 #content .bImg2 .b102{top:20px; left: 30px;}
 #content .bImg2 .b202{top:20px; right: 30px;}
@@ -270,10 +266,12 @@ body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
  
 
 /* 미디어쿼리 */
-@media screen and (min-height: 969px ){
+@media screen and (min-height: 844px ){
   #content .menu-wrap{top: 107px;}
   #content .content-wrap{top: 19%;}
   #content .bImg2 .b402{bottom: 77px}
+  #content .content-wrap #about-wrap .desc_l{top: 150px;}
+  #content .content-wrap #about-wrap .skills{padding: 103px 63px 0 63px;}
 }
 @media screen and (max-width: 1596px ){
   #content .content-wrap #about-wrap .desc_l .about_me{left: 195px;}
@@ -282,23 +280,20 @@ body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
   #content .content-wrap #about-wrap .desc_l{left: 2%;}
   #content .content-wrap #about-wrap .desc_l>p{top: 250px; left: -18px;}
 }
+@media screen and (max-width: 1407px ){
+
+}
 @media screen and (max-width: 1330px ){
-  #content .content-wrap #about-wrap .skills .skill-etc p{margin-bottom: 10px;}
-  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 18px;}
-  #content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 66px;}
-  #content .content-wrap #about-wrap .desc_l .about_me p.contact{padding-right: 37px;}
+  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 18px; }
+  #content .content-wrap #about-wrap .desc_l .about_me p{width: 88px;}
   #content .content-wrap #about-wrap .desc_l>p{font-size: 20px; top: 284px; left: 25px;}
   #content .bImg2 .b402{left: 60px;}
 }
 @media screen and (max-width: 1169px ){
   #content .content-wrap #about-wrap .desc_l .about_me{font-size: 16px;}
-  #content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 63px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p{width: 75px;}
 }
 @media screen and (max-width: 1104px ){
-  #content .content-wrap #about-wrap .desc_l .about_me p.name{padding-right: 20px;}
-  #content .content-wrap #about-wrap .desc_l .about_me p.age{padding-right: 34px;}
-  #content .content-wrap #about-wrap .desc_l .about_me p.contact{padding-right: 8px;}
-  #content .content-wrap #about-wrap .desc_l .about_me p.email{padding-right: 19px;}
   #content .bImg2 .b402{left: 48px;}
 }
 @media screen and (max-width: 1050px ){
