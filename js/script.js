@@ -119,3 +119,13 @@ const barAnimation4 = setInterval(() => {
   bar4.style.width =  t4 + '%'
   t4++ >= barReact && clearInterval(barAnimation4)
 }, 10)
+
+
+
+$(window).resize(function(){
+  var winWidth = $(window).width();
+  var boxWidth = $('.content-wrap').width();
+  if(winWidth <= 500){
+    $('.content-wrap').height(boxWidth*0.681);
+  }
+})
