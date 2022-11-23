@@ -30,7 +30,7 @@ body {width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
 }
 
 
-#header .heading{position: relative; top: 265px; z-index: 11;}
+#header .heading{position: relative; top: 31%; z-index: 11;}
 #header .heading>div{overflow: hidden;}
 #header .heading>div{-webkit-animation-delay: 0; animation-delay: 0;}
 #header .heading>div:nth-child(2)>p{-webkit-animation-delay: 0.05s; animation-delay: 0.05s;}
@@ -62,14 +62,14 @@ body {width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
 #content .menu-wrap ul li{margin-right: 30px;}
 #content .menu-wrap ul li a{font-size: 24px;font-family: 'Montserrat-bold', sans-serif; color: #4C4C4D;}
 #content .menu-wrap ul li a.on{background: linear-gradient(to top, #fad4ae 50%, transparent 50%);}
-#content .content-wrap{width: 85%; height: 80%; background: #f6eee5; border-radius: 30px; position: relative; top: 102px; left: 50%; transform: translateX(-50%);}
+#content .content-wrap{width: 85%; height: 80%; background: #f6eee5; border-radius: 30px; position: absolute; top: 12%; left: 50%; transform: translateX(-50%);}
 #content .content-wrap #about-wrap{display: flex;  
   animation: fadein 3s;
   -moz-animation: fadein 3s; 
   -webkit-animation: fadein 3s; 
   -o-animation: fadein 3s;}
+#content .content-wrap #about-wrap h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: 38px; left: 47px;}
 #content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 130px;}
-#content .content-wrap #about-wrap .desc_l h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: -90px; left: 45px; font-weight: 900;}
 #content .content-wrap #about-wrap .desc_l img{border-radius: 50%; width: 130px; position: absolute; top: 25px; left: 40px;}
 #content .content-wrap #about-wrap .desc_l>p{font-size: 23px; text-align: center; line-height: 200%; position: relative; top: 250px; left: 0px; line-height: 210%;}
 #content .content-wrap #about-wrap .desc_l .about_me{line-height: 50.2px; position: absolute; left: 200px; top: 14px; width: 345px; font-size: 22px;}
@@ -140,7 +140,7 @@ body {width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
 }
 
 #content .content-wrap #projects-wrap .projects-header{display: flex; justify-content: space-between;}
-#content .content-wrap #projects-wrap .projects-header h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: 40px; left: 45px; font-weight: 900;}
+#content .content-wrap #projects-wrap .projects-header h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: 38px; left: 47px;}
 #content .content-wrap #projects-wrap .projects-header .menu{position: absolute; top:70px; right: 100px; z-index: 999;}
 #content .content-wrap #projects-wrap .projects-header .menu ul{display: flex; height: 0;}
 #content .content-wrap #projects-wrap .projects-header .menu ul li{margin-left: 60px;}
@@ -229,10 +229,10 @@ body {width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
   -moz-animation: fadein 3s; 
   -webkit-animation: fadein 3s; 
   -o-animation: fadein 3s;}
-#content .content-wrap #contact-wrap .contact-header h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; font-weight: 900;}
+#content .content-wrap #contact-wrap h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; font-weight: 900;}
 #content .content-wrap #contact-wrap .contact-header .contact{position: relative; top: 40px; left: 45px;}
 #content .content-wrap #contact-wrap .contact-header .thankyou{position: absolute; bottom: 40px; right: 45px;}
-#content .content-wrap #contact-wrap .myInfo{line-height: 550%; position: relative; top: 140px; height: 250px;}
+#content .content-wrap #contact-wrap .myInfo{line-height: 550%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: 250px;}
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap{width: 270px; margin: 18px auto;}
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap p{font-size: 20px; position: relative; }
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap p img{width: 40px; position: relative; top: 13px; left: -8px;}
