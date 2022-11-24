@@ -162,8 +162,8 @@ body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
 .swiper {
   position: absolute;
   top: 13%;
-  left: 50px;
-  width: 90%;
+  left: 19px;
+  width: 100%;
   height: 77%;
 }
 
@@ -226,7 +226,7 @@ body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
 .swiper-button-next{
   position: absolute;
   top:480px;
-  right: 200px;
+  right: 17%;
 }
 .swiper-wrapper{
   margin-left:-110px
@@ -289,12 +289,13 @@ body {width: 100%; height: 100%; font-family: 'NotoSansR', sans-serif;}
   #content .content-wrap #about-wrap .desc_l>p{font-size: 20px; top: 270px;}
   #content .bImg2 .b402{left: 60px;}
 }
-@media screen and (max-width: 1290px ){
+@media screen and (max-width: 1352px ){
   .swiper-slide img{width: 279px; height: auto;}
   .swiper-slide .content a{width: 279px; height: 158.36px; line-height: 160px;}
   .swiper-slide h3{top: 250px;}
   .swiper-slide p{top: 288px; font-size: 16px;}
-  .swiper{left: 0;}
+  .swiper{left: 3%; top: 17%;}
+  .swiper-button-next{top: 433px; right: 22%;}
 }
 @media screen and (max-width: 1225px ){
   .swiper-slide img{width: 252px; height: auto;}
