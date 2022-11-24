@@ -74,8 +74,6 @@ $('.menu-wrap').each(function(){
   })
 });
 
-
-
 //projects
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
