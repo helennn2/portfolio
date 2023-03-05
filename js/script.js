@@ -44,7 +44,7 @@ $(window).on("wheel", function(e){
 });
 
 //화면전환시 애니메이션 실행
-  AOS.init();
+  /* AOS.init(); */
 
 //메뉴 클릭
 $('.menu-wrap').each(function(){

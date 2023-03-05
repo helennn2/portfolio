@@ -14,7 +14,6 @@
 	<meta name='Robots' content='index,follow'>
 
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
 
@@ -41,7 +40,7 @@
 					</h1>
 				</div>
 			</div>
-			<img src="./img/Vector.png" alt="Vector" class="vector">
+			<img src="./img/back.png" alt="back" class="back">
 			<a href="#content" class="click"></a>
 		</header> 
 		<main>
@@ -54,24 +53,33 @@
 					</ul>
 				</div>
 				<div class="content-wrap">
-					<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800" id="about-wrap" class="ct-wrap">
+					<div id="about-wrap" class="ct-wrap">
 						<h2>About me</h2>
 						<div class="desc_l">
-							<img src="./img/me.JPG" alt="이미지">
 							<div class="about_me">
-								<p class="name">Name.</p><span>박혜리</span><br />
+								<div class="profile">
+									<h3>PROFILE</h3>
+									<p>NAME</p><span>박혜리</span><br />
+									<p>AGE</p><span>26세</span><br />
+									<p>PHONE</p><span>010-3350-7103</span><br />
+									<p>E-MAIL</p><span>parkri1240@gmail.com</span><br />
+								</div>
+								<div class="award">
+									<h3>AWARD</h3>
+									<p>2022.05~2022.09</p><span>반응형/웹퍼블리셔/프론트엔드 웹개발자 과정 이수</span><br />
+									<span class="award_add">(더휴먼컴퓨터아카데미)</span><br />
+									<p>2022.11</p><span>웹디자인기능사</span><br />
+									<p>2022.03</p><span>GTQi 1급</span><br />
+									<p>2022.02</p><span>GTQ 1급</span><br />
+								</div>
+								<!-- <p class="name">Name.</p><span>박혜리</span><br />
 								<p class="age">Age.</p><span>25세</span><br />
 								<p class="contact">Contact.</p><span>010.3350.7103</span><br />
-								<p class="email">E-mail.</p><span>parkri1240@gmail.com</span>
+								<p class="email">E-mail.</p><span>parkri1240@gmail.com</span> -->
 							</div>
-							<p>늘 혁신과 변화를 꿈꾸는 박혜리입니다.<br />
-								배우는 것을 좋아하고,<br />
-								새로운 목표를 향한 도전을 즐깁니다. <br />
-								발전해가는 모습 확실하게 보여드리겠습니다! 
-							</p>
 						</div>
 						<div class="skills">
-							<p>Skills</p>
+							<h3>SKILLS</h3>
 							<div class="skill-wrap">
 								<div class="html">
 									<p class="sub">HTML/CSS</p>
@@ -125,69 +133,75 @@
 								<div class="content">
 									<a href="http://hyeri1240.dothome.co.kr/index.html" target="_blank">바로가기</a>
 								</div>
-								<h3>01. 행정안전부</h3>
-								<p>- 22.06.17~22.07.15 (약 1개월 소요)<br />
+								<h3>행정안전부</h3>
+								<p>
 									- 관공서 홈페이지 및 주요 메뉴 페이지 클론 코딩<br />
 									- Api(뉴스, 날씨, 지도)<br />
 									- HTML, CSS, Javascript<br />
+									- 1개월 소요<br />
 								</p>
 								</div>
 								<div class="swiper-slide">
 								<img src="./img/p_02.png" alt="행정안전부">
 								<div class="content">
-									<a href="https://ririhh.github.io/lotte/" target="_blank">바로가기</a>
+									<a href="https://helennn2.github.io/lotte/" target="_blank">바로가기</a>
 								</div>
-								<h3>02. 롯데백화점</h3>
-								<p>- 22.07.20~22.08.07 (약 2주 소요)<br />
+								<h3>롯데백화점</h3>
+								<p>
 									- 클론 코딩 및 반응형 리디자인<br />
 									- HTML, CSS, jQuery<br />
+									- 2주 소요<br />
 								</p>
 								</div>
 								<div class="swiper-slide">
 								<img src="./img/p_03.png" alt="29cm">
 								<div class="content">
-									<a href="https://ririhh.github.io/mobile/" target="_blank">바로가기</a>
+									<a href="https://helennn2.github.io/mobile/" target="_blank">바로가기</a>
 								</div>
-								<h3>03. 29CM </h3>
-								<p>- 22.08.08~22.08.15 (약 1주 소요)<br />
+								<h3>29CM </h3>
+								<p>
 									- 29CM 어플을 새로운 웹 앱으로 구현<br />
 									- HTML, SCSS, ,Javascript, jQuery<br />
+									- 1주 소요<br />
 								</p>
 								</div>
 								<div class="swiper-slide">
 								<img src="./img/p_05.png" alt="투두">
 								<div class="content">
-									<a href="https://ririhh.github.io/momentum_js/" target="_blank">바로가기</a>
+									<a href="https://helennn2.github.io/momentum_js/" target="_blank">바로가기</a>
 								</div>
-								<h3>04. 크롭 앱</h3>
-								<p>- 22.08.28~22.09.04 (약 1주 소요)<br />
+								<h3>크롭 앱</h3>
+								<p>
 									- 자바스크립트를 이용한 크롬 앱 클론 코딩<br />
 									- 투 두 리스트, 현재 위치/시각, 배경 사진/명언 랜덤<br />
 									- HTML, CSS, Javascript<br />
+									- 1주 소요<br />
 								</p>
 								</div>
 								<div class="swiper-slide">
 								<img src="./img/p_04.png" alt="그림판">
 								<div class="content">
-									<a href="https://ririhh.github.io/meme-maker/" target="_blank">바로가기</a>
+									<a href="https://helennn2.github.io/meme-maker/" target="_blank">바로가기</a>
 								</div>
-								<h3>05. 그림판</h3>
-								<p>- 22.09.10~22.09.18 (약 1주 소요)<br />
+								<h3>그림판</h3>
+								<p>
 									- 자바스크립트를 이용한 그림판 클론 코딩<br />
 									- 그림 그리기, 이미지 추가, 삭제 기능<br >
 									- HTML, CSS, Javascript<br />
+									- 1주 소요<br />
 								</p>
 								</div>
 								<div class="swiper-slide">
 								<img src="./img/p_06.png" alt="kurly">
 								<div class="content">
-									<a href="https://ririhh.github.io/kurly/" target="_blank">바로가기</a>
+									<a href="https://helennn2.github.io/kurly/" target="_blank">바로가기</a>
 								</div>
-								<h3>06. 마켓컬리 회원가입 폼</h3>
-								<p>- 22.09.13~22.09.28 (약 2주 소요)<br />
+								<h3>마켓컬리 회원가입 폼</h3>
+								<p>
 									- 클론 코딩<br />
 									- 아이디/비밀번호 조합, 주소 찾기 Api 등의 기능 <br />
 									- React, SCSS<br />
+									- 2주 소요<br />
 								</p>
 								</div>
 							</div>
@@ -209,8 +223,7 @@
 					</div>
 					<div class="link">
 						<ul>
-							<li><a href="https://github.com/ririhh" target="_blank"><img src="./img/github.svg" alt="gitImg"></a></li>
-							<li><a href="https://ririhh.github.io/daily/" target="_blank"><img src="./img/book.svg" alt="bookImg" class="book"></a></li>
+							<li><a href="https://github.com/helennn2" target="_blank"><img src="./img/github.svg" alt="gitImg"></a></li>
 						</ul>
 					</div>
 				</div>
