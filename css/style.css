@@ -15,7 +15,7 @@ html{width:100%; height:100%; overflow: hidden;}
 body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
 
 #header{position: relative; z-index: 1; width: 100%; height: 100vh; background: #F8FBEF;}
-#header .back{position: absolute; right: 24%; top: 50%; transform: translateY(-50%); width: 350px; z-index: 10;}
+#header .back{position: absolute; right: 24%; top: 48%; transform: translateY(-50%); width: 350px; z-index: 10;}
 #header .click{width: 33px; height: 39px; position: absolute; bottom: 38px; left: 50%; transform: translateX(-50%); cursor: pointer; background: url(../img/click.png) no-repeat; background-size: cover; 
   animation: motion 0.5s linear 0s infinite alternate;
   -moz-animation: motion 0.5s linear 0s infinite alternate;
@@ -134,10 +134,10 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans 
 #skill-bar{margin-top: 10px;}
 .progress-bar, .progress-bar2, .progress-bar3, .progress-bar4{width: 100%; height: 30px; background-color: #dedede; font-weight: 600; font-size: .8rem; margin-bottom: 1rem; border-radius: 20px;}
 .progress-bar>div{width: 0; height: 30px; padding: 0; text-align: center; color: #111; border-radius: 20px;}
-.progress-bar .progress {background-color: #66764A;}
-.progress-bar .progress-bar2 {background-color: #D5C4A3;}
-.progress-bar .progress-bar3 {background-color: #e0ac73;}
-.progress-bar .progress-bar4 {background-color: #95A474;}
+.progress-bar .progress{background-color: #66764A;}
+.progress-bar .progress-bar2{background-color: #D5C4A3;}
+.progress-bar .progress-bar3{background-color: #e0ac73;}
+.progress-bar .progress-bar4{background-color: #95A474;}
 
 #content .content-wrap #projects-wrap{display: none;}
 #content .content-wrap #projects-wrap h3{font-weight: 700;}
@@ -217,8 +217,8 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans 
   .swiper-button-next{top: 433px; right: 22%;}
 }
 @media screen and (max-width: 1330px ){
-  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 18px; }
-  #content .content-wrap #about-wrap .desc_l .about_me p{width: 88px;}
+  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 16px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p{width: 158px;}
   #content .content-wrap #about-wrap .desc_l>p{font-size: 20px; top: 270px;}
   #content .bImg2 .b402{left: 60px;}
   .swiper-slide img{width: 252px; height: auto;}
@@ -226,9 +226,12 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans 
   .swiper-slide h3{top: 230px;}
   .swiper-slide p{top: 268px; font-size: 14px;}
 }
+@media screen and (max-width: 1210px ){
+  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 14px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p{width: 130px;}
+  #content .content-wrap #about-wrap .desc_l .about_me .award .award_add{margin-left: 130px;}
+}
 @media screen and (max-width: 1169px ){
-  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 16px;}
-  #content .content-wrap #about-wrap .desc_l .about_me p{width: 75px;}
   .swiper-slide h3{font-size: 20px;}
   .swiper-slide p{font-size: 12px;}
 }
@@ -237,8 +240,8 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans 
   .swiper{left: 1%;}
 }
 @media screen and (max-width: 1050px ){
-  #content .content-wrap #about-wrap .desc_l .about_me{font-size: 14px;}
-  #content .content-wrap #about-wrap .desc_l>p{font-size: 19px;}
+  #content .content-wrap #about-wrap .desc_l .about_me p{width: 118px;}
+  #content .content-wrap #about-wrap .desc_l .about_me .award .award_add{margin-left: 118px;}
 }
 
 @media screen and (max-width: 1000px ){
