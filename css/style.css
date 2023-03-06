@@ -8,11 +8,27 @@
   font-family: 'Montserrat-bold';
   src: url('../font/Montserrat-BoldItalic.ttf') format('truetype');
 }
-/* @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  src: local('Spoqa Han Sans Bold'),
+  url('../font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 500;
+  src: local('Spoqa Han Sans Medium'),
+  url('../font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+  src: local('Spoqa Han Sans Regular'),
+  url('../font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
 
 html{width:100%; height:100%; overflow: hidden;} 
-body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans Neo', 'Sans-serif';}
+body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
 
 #header{position: relative; z-index: 1; width: 100%; height: 100vh; background: #F8FBEF;}
 #header .back{position: absolute; right: 24%; top: 48%; transform: translateY(-50%); width: 350px; z-index: 10;}
@@ -113,12 +129,12 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans Neo', 'Sans-serif'
 #content .content-wrap #about-wrap h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: 38px; left: 47px;}
 #content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 120px; left: 5%; font-size: 18px;}
 #content .content-wrap #about-wrap .desc_l .about_me .profile{line-height: 40.2px; position: absolute; left: 20px; top: -13px; width: 360px;}
-#content .content-wrap #about-wrap .desc_l .about_me h3{font-size: 26px; font-family: 'Roboto'; font-weight: 800; margin-bottom: 5px; color: #4c543a}
+#content .content-wrap #about-wrap .desc_l .about_me h3{font-size: 26px; font-weight: 700; letter-spacing: -0.8px; margin-bottom: 5px; color: #4c543a}
 #content .content-wrap #about-wrap .desc_l .about_me p{display: block; font-weight: 500; width: 160px; float: left;} 
 #content .content-wrap #about-wrap .desc_l .about_me .award{line-height: 40.2px; position: absolute; left: 20px; top: 220px; width: 700px;}
 #content .content-wrap #about-wrap .desc_l .about_me .award .award_add{margin-left: 160px;}
 #content .content-wrap #about-wrap .skills{width: 50%; padding: 103px 63px 0 63px;}
-#content .content-wrap #about-wrap .skills h3{font-size: 26px; font-family: 'Roboto'; font-weight: 800;color: #4c543a}
+#content .content-wrap #about-wrap .skills h3{font-size: 26px; font-weight: 700; letter-spacing: -0.8px; color: #4c543a}
 #content .content-wrap #about-wrap .skills .skill-wrap>div{position: relative; margin-top: 28px;}
 #content .content-wrap #about-wrap .skills .skill-wrap div>p{display: inline; font-size: 16px;}
 #content .content-wrap #about-wrap .skills .skill-wrap div .percent{position: absolute; right: 0;}
