@@ -131,7 +131,7 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
 #content .content-wrap{width: 85%; height: 656px; background: #f6eee5; border-radius: 30px; position: absolute; top: 12%; left: 50%; transform: translateX(-50%);}
 #content .content-wrap #about-wrap{display: flex;}
 #content .content-wrap #about-wrap h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: 38px; left: 47px;}
-#content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 120px; left: 5%; font-size: 18px;}
+#content .content-wrap #about-wrap .desc_l{width: 50%; position: relative; top: 120px; left: 2%; font-size: 18px;}
 #content .content-wrap #about-wrap .desc_l .about_me .profile{line-height: 40.2px; position: absolute; left: 20px; top: -13px; width: 360px;}
 #content .content-wrap #about-wrap .desc_l .about_me h3{font-size: 26px; font-weight: 700; letter-spacing: -0.8px; margin-bottom: 5px; color: #4c543a}
 #content .content-wrap #about-wrap .desc_l .about_me p{display: block; font-weight: 500; width: 160px; float: left;} 
@@ -223,12 +223,8 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
 @media screen and (min-width: 1770px ){
   .swiper{left: 5%;}
 }
-@media screen and (max-width: 1596px ){
-  #content .content-wrap #about-wrap .desc_l .about_me{left: 195px;}
-}
 @media screen and (max-width: 1534px ){
-  #content .content-wrap #about-wrap .desc_l{left: 2%;}
-  #content .content-wrap #about-wrap .desc_l>p{top: 250px; left: 0;}
+  /* #content .content-wrap #about-wrap .desc_l>p{top: 250px; left: 0;} */
   .swiper-slide img{width: 279px; height: auto;}
   .swiper-slide .content a{width: 279px; height: 158.36px; line-height: 160px;}
   .swiper-slide h3{top: 250px;}
