@@ -26,6 +26,10 @@
   src: local('Spoqa Han Sans Regular'),
   url('../font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('../font/SpaceMono-Regular.ttf') format('truetype');
+}
 
 html{width:100%; height:100%; overflow: hidden;} 
 body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
@@ -156,7 +160,7 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
 .progress-bar .progress-bar4{background-color: #95A474;}
 
 #content .content-wrap #projects-wrap{display: none;}
-#content .content-wrap #projects-wrap h3{font-weight: 700;}
+#content .content-wrap #projects-wrap h3{font-weight: 500;}
 
 #content .content-wrap #projects-wrap .projects-header{display: flex; justify-content: space-between;}
 #content .content-wrap #projects-wrap .projects-header h2{font-size: 40px; color: #4C4C4D; font-family: 'Montserrat-bold', sans-serif; position: absolute; top: 38px; left: 47px;}
@@ -173,7 +177,7 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
 .swiper-slide:first-child{margin-left: -60px;}
 .swiper-slide img {display: block; width: 340px; height: 193px; object-fit: cover; position: absolute; top: 72px; left: 180px;}
 .swiper-slide img.cmImg{width:300px}
-.swiper-slide h3{font-size: 22px; position: absolute; top: 282px; left: 190px; width: 320px; text-align: left; font-family: 'NotoSansB';}
+.swiper-slide h3{font-size: 22px; position: absolute; top: 282px; left: 190px; width: 320px; text-align: left;}
 .swiper-slide p{text-align: left; font-size: 18px; position: absolute; top: 324px; left: 190px; width: 417px; line-height: 180%;}
 .swiper-slide .content{position: absolute; top: 72px;left: 180px;}
 .swiper-slide>div:hover a{opacity: 1;}
@@ -187,14 +191,14 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
 #content .content-wrap #contact-wrap .contact-header .thankyou{position: absolute; bottom: 40px; right: 45px;}
 #content .content-wrap #contact-wrap .myInfo{line-height: 550%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: 250px;}
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap{width: 270px; margin: 18px auto;}
-#content .content-wrap #contact-wrap .myInfo .myInfo-wrap p{font-size: 20px; position: relative; font-family: 'Roboto';}
+#content .content-wrap #contact-wrap .myInfo .myInfo-wrap p{font-size: 20px; position: relative;}
 #content .content-wrap #contact-wrap .myInfo .myInfo-wrap p img{width: 40px; position: relative; top: 13px; left: -8px;}
 #content .content-wrap .link ul{position: absolute; bottom: 10px; right:-40px;}
 #content .content-wrap .link ul li a img{width: 30px; transition: .4s;}
 #content .content-wrap .link ul li:hover a img{scale: 1.2;}
 
 .alert{background: #F8FBEF; width: 100%; height: 100vh; display: grid; place-items: center; display: none;}
-.alert h2{font-size: 30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 25ch; animation: typing 2s steps(25), blink .5s step-end infinite alternate; white-space: nowrap;  overflow: hidden; font-family: monospace;} 
+.alert h2{font-size: 30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 25ch; animation: typing 2s steps(25), blink .5s step-end infinite alternate; white-space: nowrap;  overflow: hidden; font-family: 'SpaceMono';} 
 
 @keyframes typing {
   from {
@@ -213,7 +217,7 @@ body {width: 100%; height: 100%; font-family: 'Spoqa Han Sans', 'Sans-serif';}
   #content .menu-wrap{top: 107px;}
   #content .content-wrap{top: 19%;}
   #content .bImg2 .b402{bottom: 77px}
-  #content .content-wrap #about-wrap .desc_l{top: 150px;}
+  #content .content-wrap #about-wrap .desc_l{left: 24px;}
   #content .content-wrap #about-wrap .skills{padding: 103px 63px 0 63px;}
 }
 @media screen and (min-width: 1770px ){
